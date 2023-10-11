@@ -6,9 +6,10 @@ import moduleDownload from './Download.module.sass'
 const Download = () => {
     return (
         <div className={moduleDownload.downloadLayout}>
-            <div className={moduleDownload.downloadTitle}> 
+            <div className={moduleDownload.downloadTitle}>
                 Загрузка данных об эксперименте
             </div>
+
             <div className={moduleDownload.nameBlock}>
                 <div>
                     Название эксперимента
@@ -44,8 +45,10 @@ const Download = () => {
                     <input type='file' accept='.dak' />
                 </div>
             </div>
+            <div className={moduleDownload.downloadButon}>
+                <MyButton className={moduleDownload.downloadButton} title='Загрузить' >Загрузить</MyButton>
 
-            <MyButton title='Загрузить' >Загрузить</MyButton>
+            </div>
 
         </div>
     );
