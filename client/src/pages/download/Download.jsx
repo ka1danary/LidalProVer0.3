@@ -6,35 +6,46 @@ import moduleDownload from './Download.module.sass'
 const Download = () => {
     return (
         <div className={moduleDownload.downloadLayout}>
-            <div>
+            <div className={moduleDownload.downloadTitle}> 
+                Загрузка данных об эксперименте
+            </div>
+            <div className={moduleDownload.nameBlock}>
                 <div>
                     Название эксперимента
                 </div>
-                <MyInput placeholder='Название эксперимента' tupe='text'/>
+                <MyInput placeholder='Название эксперимента' type='text' />
                 <div>
                     Время начала работы эксперимента
                 </div>
-                <MyInput placeholder='Начало эксперимента' type='datetime-local'/>
+                <MyInput placeholder='Начало эксперимента' type='datetime-local' />
             </div>
-            <div>
-            <div>
-                    Описание эксперимента
+            <div className={moduleDownload.nameBlock}>
+                <div>
+                    <div>
+                        Описание эксперимента
+                    </div>
+                    <MyInput placeholder='Описание эксперимента' type='title' />
                 </div>
-                <MyInput placeholder='Описание эксперимента' type='title'/>
             </div>
-            <div>
-            Расстояние между соседними отсчетами
-            <MyInput placeholder='Введите число' type='number'/>
+            <div className={moduleDownload.nameBlock}>
+                <div>
+                    Расстояние между соседними отсчетами
+                </div>
+
+                <MyInput placeholder='Введите число' type='number' />
             </div>
-            <div>
-                Загрузка файла .dat
-                <input type='file' accept='.dat'/>
+            <div className={moduleDownload.nameBlock}>
+                <div>
+                    Загрузка файла .dat
+                    <input type='file' accept='.dat' />
+                </div>
+                <div>
+                    Загрузка файла .dak
+                    <input type='file' accept='.dak' />
+                </div>
             </div>
-            <div>
-                Загрузка файла .dak
-                <input type='file' accept='.dak'/>
-            </div>
-            <MyButton title='Загрузить'>Загрузить</MyButton>
+
+            <MyButton title='Загрузить' >Загрузить</MyButton>
 
         </div>
     );
