@@ -6,11 +6,13 @@ import Home from "./pages/home/Home";
 import Download from "./pages/download/Download";
 import View from "./pages/view/View";
 import Experiment from "./pages/experiment/Experiment";
+import Linechart from "./ui/graphs/linechart/Linechart";
 
 function App() {
   return (
     <div className="App">
       <Header/>
+      
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/download" element={<Download/>} />

@@ -1,9 +1,10 @@
 import React from 'react';
+import Linechart from '../../ui/graphs/linechart/Linechart';
 
 const View = () => {
     return (
         <div>
-            View
+            <Linechart/>
         </div>
     );
 };

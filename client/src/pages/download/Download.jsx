@@ -9,8 +9,9 @@ const Download = () => {
             <div className={moduleDownload.downloadTitle}>
                 Загрузка данных об эксперименте
             </div>
-
             <div className={moduleDownload.nameBlock}>
+                <>
+                </>
                 <div>
                     Название эксперимента
                 </div>
