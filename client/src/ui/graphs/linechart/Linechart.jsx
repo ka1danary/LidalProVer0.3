@@ -27,6 +27,7 @@ export const options = {
     plugins: {
         legend: {
             position: 'top',
+
         },
         title: {
             display: true,
@@ -45,6 +46,8 @@ export const data = {
             data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
             borderColor: 'rgb(255, 99, 132)',
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            position: 'top',
+
         },
         {
             label: 'Dataset 2',
@@ -58,7 +61,10 @@ export const data = {
 
 const Linechart = () => {
     return (
-        <Line options={options} data={data} />
+        <div style={{height:"500px", width : "500px", position : "relative", marginBottom:"1%", padding:"1%"}}>
+            <Line options={options} data={data} />
+        </div>
+
     );
 };
 
